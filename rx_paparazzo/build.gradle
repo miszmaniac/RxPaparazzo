@@ -7,6 +7,7 @@ buildscript {
     repositories {
         mavenCentral()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
@@ -37,8 +38,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'io.reactivex:rxjava:1.2.2'
+    
+    compile 'com.github.miszmaniac:RxActivityResult:1.x-SNAPSHOT'
 
-    compile 'com.github.VictorAlbertos:RxActivityResult:0.4.1-1.x'
+    //compile 'com.github.VictorAlbertos:RxActivityResult:0.4.1-1.x'
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
     compile 'com.yalantis:ucrop:2.2.0'
 
